@@ -157,3 +157,7 @@ app.post('/api/admin/login', (req, res) => {
     }
     res.status(401).json({ success: false, message: "Invalid Credentials" });
 });
+// Add this at the top level of your routes
+app.get('/', (req, res) => {
+  res.send('Express Car Care Backend is Live and Running!');
+});
