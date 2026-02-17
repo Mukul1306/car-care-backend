@@ -9,7 +9,7 @@ require('dotenv').config();
 const app = express();
 
 app.use(cors({
-  origin: ["https://carcare.netlify.app", "http://localhost:3000"]
+  origin: ["https://exppresscarwash.netlify.app", "http://localhost:3000"]
 }));
 app.use(express.json());
 
