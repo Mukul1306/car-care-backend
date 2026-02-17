@@ -7,7 +7,11 @@ const multer = require('multer');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+const cors = require('cors');
+
+app.use(cors({
+  origin: "https://carcare.netlify.app"
+}));
 app.use(express.json());
 
 // 1. Cloudinary Configuration
