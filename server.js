@@ -7,10 +7,9 @@ const multer = require('multer');
 require('dotenv').config();
 
 const app = express();
-const cors = require('cors');
 
 app.use(cors({
-  origin: "https://carcare.netlify.app"
+  origin: ["https://carcare.netlify.app", "http://localhost:3000"]
 }));
 app.use(express.json());
 
